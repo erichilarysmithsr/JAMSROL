@@ -1,3 +1,3 @@
-class Main {
+ public class Main {
   
 }
