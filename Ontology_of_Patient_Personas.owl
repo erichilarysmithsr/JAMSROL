@@ -1,0 +1,3682 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sbmi.uth.edu/ontologies/odpp.owl#"
+     xml:base="http://sbmi.uth.edu/ontologies/odpp.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <terms:contributor>Tuan Amith</terms:contributor>
+        <terms:creator>Patricia Ngantcha</terms:creator>
+        <terms:title>Ontology for Dental Patient Persona</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Classifies_patients_by -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Classifies_patients_by">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Describes"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Odontophobia_Level"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#MILD_level_of_Odontophobia_‘dental_anxiety’"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#MODERATE_level_of_Odontophodia_‘dental_fear’"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#SEVERE_level_of_Odontophobia_‘dental_phobia’"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Consist_of_information_on -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Consist_of_information_on">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Consist_of_the -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Consist_of_the">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Contains_the_patient -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Contains_the_patient">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Emergency_Contact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Describes -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Describes">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Odontophobia_Level"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Describes_different -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Describes_different">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Describes_each -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Describes_each">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Social_History"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Describes_patient_level_of -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Describes_patient_level_of">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Oral_Health_Literacy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Describes_the_various -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Describes_the_various">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Detailing_patient_race_as -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Detailing_patient_race_as">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#States_each"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#African_American_Race"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#American_Indian_Race"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Asian_American_Race"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Hispanic_Race"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Pacific_Islander_Race"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Caucasian/White_Race"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Details_each -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Details_each">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#In_regards_to -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#In_regards_to">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Mentions"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Marital_Status"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Divorced_status"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Married_status"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Single_status"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Widow/Widower_status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Introduces_each -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Introduces_each">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#List_each_patient -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#List_each_patient">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Leisure_Time_Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#List_various -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#List_various">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Lists -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Lists">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Mentions -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Mentions">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Marital_Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Mentions_each_patient -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Mentions_each_patient">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Pertaining_to_patient_dental_visit -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pertaining_to_patient_dental_visit">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#List_various"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Provides_Information_on_the -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Provides_Information_on_the">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Provides_the_patient -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Provides_the_patient">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Regarding_their -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Regarding_their">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#List_each_patient"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Leisure_Time_Activity"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Athletics"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Dancing"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Gymnastics"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Singing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Relating_to_the_patient -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Relating_to_the_patient">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Details_each"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Ameliorate_physical_health_and_fitness"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Improve_dental_health_at_low_cost"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Improve_diet_and_fitness"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Obtain_more_knowledge_on_oral_health"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Reduce_anxiety_at_dentist"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Improve_diet,_lifestyle_and_oral_health"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Specific_to -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Specific_to">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Describes_each"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Social_History"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Alcohol_Drinking_History"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Specifying_the_disease -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Specifying_the_disease">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Lists"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Toothache_Complaint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#States_each -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#States_each">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Stating -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Stating">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Introduces_each"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Name"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_First_name"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Last_name"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Middle_name"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Stating_each_patient_personality_as -->
+
+    <owl:ObjectProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Stating_each_patient_personality_as">
+        <rdfs:subPropertyOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Describes_different"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Agreeable_personality"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Conscientious_personality"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Extroverted_personality"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Introverted_personality"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Neurotic_personality"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Quiet_personality"/>
+        <rdfs:range rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Open/Curious_personality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#hasUtteranceExpression -->
+
+    <owl:DatatypeProperty rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#hasUtteranceExpression">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Accompaniment_of_service_animal -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Accompaniment_of_service_animal">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Accountant_Job -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Accountant_Job">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Athletics -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Athletics">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Leisure_Time_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Dancing -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Dancing">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Leisure_Time_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Gymnastics -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Gymnastics">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Leisure_Time_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Singing -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Singing">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Leisure_Time_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Actonel_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Actonel_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Adrenal_gland_disorder -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Adrenal_gland_disorder">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Endocrine_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Aetna_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Aetna_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#African_American_Race -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#African_American_Race">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Agreeable_personality -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Agreeable_personality">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Alcohol_Drinking_History -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Alcohol_Drinking_History">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Social_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Allergic_rhinitis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Allergic_rhinitis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Ameliorate_physical_health_and_fitness -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Ameliorate_physical_health_and_fitness">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#American_Indian_Race -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#American_Indian_Race">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Ameritas_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Ameritas_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Anxiety_disorder_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Anxiety_disorder_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Aredia_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Aredia_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Arthritis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Arthritis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Musculoskeletal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Asian_American_Race -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Asian_American_Race">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Atrial_fibrillation_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Atrial_fibrillation_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Autism_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Autism_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Autoimmune_disease_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Autoimmune_disease_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Immunologic_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Beer_Drinking -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Beer_Drinking">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Alcohol_Drinking_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Bladder_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Bladder_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Bleeding_disorder_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Bleeding_disorder_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Hematologic_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Bleeding_gums_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Bleeding_gums_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Blisters -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Blisters">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Skin_problems_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Blood_disorder_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_disorder_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Hematologic_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Blood_pressure_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_pressure_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Blood_transfusion_after_1987 -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_transfusion_after_1987">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_transfusion_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Blood_transfusion_before_1987 -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_transfusion_before_1987">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_transfusion_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Blood_transfusion_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_transfusion_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Blue_Cross_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Blue_Cross_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Body_Mass_Index_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Body_Mass_Index_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Bone_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Bone_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Bone_disorder -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Bone_disorder">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Musculoskeletal_disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Boniva_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Boniva_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Braces -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Braces">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Brain_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Brain_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Breast_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Breast_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Oncologic_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cardiac_arrythmia_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cardiac_arrythmia_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Caregiver_to_stay_in_operatory_during_appointment -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Caregiver_to_stay_in_operatory_during_appointment">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cerebral_palsy_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cerebral_palsy_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Chest_pain_exacerbated_by_deep_breathing_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Chest_pain_exacerbated_by_deep_breathing_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Chronic_bronchitis_or_emphysema_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Chronic_bronchitis_or_emphysema_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Chronic_sinusitis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Chronic_sinusitis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cigarettes_smoking -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cigarettes_smoking">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cigars_smoking -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cigars_smoking">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cigna_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cigna_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cocaine_drug -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cocaine_drug">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#recreational_drugs_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Codeine_Allergy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Codeine_Allergy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Medication_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Colitis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Colitis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Colon_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Colon_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Conditions_treated_by_primary_care_provider -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Conditions_treated_by_primary_care_provider">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Primary_care_Provider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Congestive_heart_failure_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Congestive_heart_failure_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Conscientious_personality -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Conscientious_personality">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Consultant_Job -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Consultant_Job">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Contact_number_of_primary_care_provider -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Contact_number_of_primary_care_provider">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Primary_care_Provider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Coronary_artery_disease_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Coronary_artery_disease_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cosmetic_Allergies -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cosmetic_Allergies">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cough_Productive -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_Productive">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cough_blood -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_blood">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cough_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cough_pus -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_pus">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cough_sputum -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_sputum">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Crystal_methamphetamine_drug -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Crystal_methamphetamine_drug">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#recreational_drugs_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Currently_undergoing_dialysis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Currently_undergoing_dialysis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Renal_and_Genitourinary_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Currently_wear_an_oral_or_dental_appliance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Currently_wear_an_oral_or_dental_appliance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_Surgery -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_Surgery">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Surgical_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_last_A1c_value -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_last_A1c_value">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Type_I_or_Type_II_diabetes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_last_dental_visit -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_last_dental_visit">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_last_visit_to_diabetes_physician -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_last_visit_to_diabetes_physician">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Type_I_or_Type_II_diabetes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Delta_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Delta_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Health_Patient_Persona"/>
+        <rdfs:comment>Central concept for the dental persona of a patient.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Dental_prosthesis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_prosthesis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Dentures -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Dentures">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Depression_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Depression_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Diabetes_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Diabetes_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Endocrine_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Didronel_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Didronel_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Difficulty_breathing_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Difficulty_breathing_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Difficulty_swallowing_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Difficulty_swallowing_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Divorced_status -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Divorced_status">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Marital_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Dry_cough -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Dry_cough">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cough_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Dry_mouth -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Dry_mouth">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#E-cigarettes_smoking -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#E-cigarettes_smoking">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Ear_problem_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Ear_problem_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Entrepreneur_Job -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Entrepreneur_Job">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Event-Driven_Patient_Persona -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Event-Driven_Patient_Persona">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:isDefinedBy>Manji, I. (2018, January 29). The 5 Patients Every Dentist Will Treat—Spear Education. https://www.speareducation.com/spear-review/2015/09/the-five-kinds-of-patients-in-every-dental-practice</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Event-driven_Patient -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Event-driven_Patient">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Extroverted_personality -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Extroverted_personality">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Facial_pain_or_pain_in_your_jaw_joint -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Facial_pain_or_pain_in_your_jaw_joint">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_TMD/Facial_Pain_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Arthritis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Arthritis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Diabetes -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Diabetes">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Heart_attack -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Heart_attack">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Heart_disease -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Heart_disease">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_High_blood_pressure -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_High_blood_pressure">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Stroke -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Family_history_of_Stroke">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Fearful_Patient -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Fearful_Patient">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Fearful_Patient_Persona -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Fearful_Patient_Persona">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:isDefinedBy>Manji, I. (2018, January 29). The 5 Patients Every Dentist Will Treat—Spear Education. https://www.speareducation.com/spear-review/2015/09/the-five-kinds-of-patients-in-every-dental-practice</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Female_Gender -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Female_Gender">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Fen-Phen_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Fen-Phen_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Fillings -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Fillings">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Food_Allergies -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Food_Allergies">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Forgetful_Patient -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Forgetful_Patient">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Forgetful_Patient_Persona -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Forgetful_Patient_Persona">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:isDefinedBy>Manji, I. (2018, January 29). The 5 Patients Every Dentist Will Treat—Spear Education. https://www.speareducation.com/spear-review/2015/09/the-five-kinds-of-patients-in-every-dental-practice</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Fosamax_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Fosamax_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Frequent_bathroom_breaks -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Frequent_bathroom_breaks">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Frequent_sore_throat_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Frequent_sore_throat_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Gastroesophageal_reflux_disease_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Gastroesophageal_reflux_disease_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Gout_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Gout_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Musculoskeletal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Grand_mal_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Grand_mal_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Growths -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Growths">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Skin_problems_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Gum_problems -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Gum_problems">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Gum_treatment -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Gum_treatment">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#HIV_disease -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#HIV_disease">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Sexually_transmitted_disease_(STD)_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Habitually_clench_or_grind_teeth_during_the_day_or_night -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Habitually_clench_or_grind_teeth_during_the_day_or_night">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_TMD/Facial_Pain_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hard_Liquor_drinking -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hard_Liquor_drinking">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Alcohol_Drinking_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Have_had_teeth_whitened -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Have_had_teeth_whitened">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Head_Injury_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Head_Injury_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Health_Patient_Persona -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Health_Patient_Persona">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hearing_Impairment_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hearing_Impairment_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Heart_Block_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Heart_Block_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Heart_attack_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Heart_attack_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Heart_attack_less_than_6_months_ago -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Heart_attack_less_than_6_months_ago">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Heart_attack_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Heart_attack_more_than_6_months_ago -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Heart_attack_more_than_6_months_ago">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Heart_attack_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Heart_murmur_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Heart_murmur_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Heart_rate_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Heart_rate_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Heartburn_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Heartburn_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Height_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Height_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hemophilia_A_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hemophilia_A_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Bleeding_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hemophilia_B_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hemophilia_B_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Bleeding_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis_A -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis_A">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis/Jaundice_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis_B -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis_B">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis/Jaundice_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis_C -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis_C">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis/Jaundice_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis_D -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis_D">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis/Jaundice_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Herbal_Supplements -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Herbal_Supplements">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Current_Medications_and_Supplements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Heroin_drug -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Heroin_drug">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#recreational_drugs_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Herpes_disease -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Herpes_disease">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Sexually_transmitted_disease_(STD)_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#High_Level_of_Oral_Health_Literacy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#High_Level_of_Oral_Health_Literacy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Oral_Health_Literacy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hispanic_Race -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hispanic_Race">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hoarseness_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hoarseness_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Home_maker_job -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Home_maker_job">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hookah_smoking -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hookah_smoking">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Humana_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Humana_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hypertension_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hypertension_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hyperthyroidism -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hyperthyroidism">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Thyroid_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hypothyroidism -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hypothyroidism">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Thyroid_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Implants -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Implants">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Improve_dental_health_at_low_cost -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Improve_dental_health_at_low_cost">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Improve_diet_and_fitness -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Improve_diet_and_fitness">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Infective_endocarditis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Infective_endocarditis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Inhaled_recreational_drugs -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Inhaled_recreational_drugs">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#recreational_drugs_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Intellectual_Disability_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Intellectual_Disability_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Intravenous_recreational_drugs -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Intravenous_recreational_drugs">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#recreational_drugs_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Introverted_personality -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Introverted_personality">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Iron_deficiency_anemia_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Iron_deficiency_anemia_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Journalist_Job -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Journalist_Job">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Kidney_stones_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Kidney_stones_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Renal_and_Genitourinary_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Last_glucometer_reading -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Last_glucometer_reading">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Type_I_or_Type_II_diabetes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Latex_Allergies -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Latex_Allergies">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Leukemia_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Leukemia_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Limbs_disorder -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Limbs_disorder">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Musculoskeletal_disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Local_anesthetics_Allergy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Local_anesthetics_Allergy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Medication_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Low_Level_of_Oral_Health_Literacy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Low_Level_of_Oral_Health_Literacy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Oral_Health_Literacy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Lung_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Lung_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Lymphoma_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Lymphoma_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Male_Gender -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Male_Gender">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Marijuana_drug -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Marijuana_drug">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#recreational_drugs_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Married_status -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Married_status">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Marital_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Medication-induced_bleeding_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Medication-induced_bleeding_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Bleeding_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Medication_Allergies -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Medication_Allergies">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#MetLife_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#MetLife_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Metals_Allergies -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Metals_Allergies">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Moderate_Level_of_Oral_Health_Literacy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Moderate_Level_of_Oral_Health_Literacy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Oral_Health_Literacy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Modification_from_standard_chair_position -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Modification_from_standard_chair_position">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Monay-Wednesday-Friday -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Monay-Wednesday-Friday">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Currently_undergoing_dialysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Multiple_sclerosis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Multiple_sclerosis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Immunologic_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Musculoskeletal_disorder -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Musculoskeletal_disorder">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Musculoskeletal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Name_of_Primary_care_provider -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Name_of_Primary_care_provider">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Primary_care_Provider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Neck_disorder -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Neck_disorder">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Musculoskeletal_disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Neurotic_personality -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Neurotic_personality">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Never_or_Almost_never_occurs -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Never_or_Almost_never_occurs">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Nodding_off_or_Sleeping_while_driving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Nodding_off_or_Sleeping_while_driving -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Nodding_off_or_Sleeping_while_driving">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Sleeping_Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Nurse_Job -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Nurse_Job">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Obstructive_Sleep_Apnea -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Obstructive_Sleep_Apnea">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Obtain_more_knowledge_on_oral_health -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Obtain_more_knowledge_on_oral_health">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Occurs_1-2__times_a_month -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Occurs_1-2__times_a_month">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Nodding_off_or_Sleeping_while_driving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Occurs_1-2_times_a_week -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Occurs_1-2_times_a_week">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Nodding_off_or_Sleeping_while_driving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Occurs_3-4_times_a_week -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Occurs_3-4_times_a_week">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Nodding_off_or_Sleeping_while_driving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Occurs_Everyday -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Occurs_Everyday">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Nodding_off_or_Sleeping_while_driving"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Oral_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Oral_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Oral_or_IV_steroids_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Oral_or_IV_steroids_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Oral_pathology -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Oral_pathology">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Oral_recreational_drugs -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Oral_recreational_drugs">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#recreational_drugs_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Organ_transplant_candidate -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Organ_transplant_candidate">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_General_Health_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Osteoporosis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Osteoporosis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Musculoskeletal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Other_Gender -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Other_Gender">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Other_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Other_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Other_forms_of_diabetes -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Other_forms_of_diabetes">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Diabetes_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Other_renal_and_genitourinary_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Other_renal_and_genitourinary_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Renal_and_Genitourinary_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Other_thyroid_disorder -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Other_thyroid_disorder">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Thyroid_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Outcome_of_surgery -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Outcome_of_surgery">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Surgical_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Over_the_counter_medications -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Over_the_counter_medications">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Current_Medications_and_Supplements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Pacific_Islander_Race -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pacific_Islander_Race">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Pain_Complaint -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pain_Complaint">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Palpitations_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Palpitations_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Pancreatic_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pancreatic_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Partial_seizures_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Partial_seizures_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_First_name -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_First_name">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Last_name -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Last_name">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Middle_name -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Middle_name">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Allergies -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Allergies">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Patient&apos;s state of health when first seen by Doctor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <skos:altLabel>Patient Persona Cardiovascular Diagnosis Status (Past and Present)</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Category -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Category">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Patient category from literature review</rdfs:comment>
+        <rdfs:isDefinedBy>Manji, I. (2018, January 29). The 5 Patients Every Dentist Will Treat—Spear Education. https://www.speareducation.com/spear-review/2015/09/the-five-kinds-of-patients-in-every-dental-practice</rdfs:isDefinedBy>
+        <skos:note>consider moving it to a type of Persona concept</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Patient&apos;s main medical problem</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Current_Medications_and_Supplements -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Current_Medications_and_Supplements">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_Treatment -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_Treatment">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <skos:altLabel>Patient&apos;s_Previous_Dental_treatments</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dermatologic_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dermatologic_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Emergency_Contact -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Emergency_Contact">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Referral person in case of emergency</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Endocrine_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Endocrine_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <skos:altLabel>Patient Persona Endocrine Diagnosis (Past and Current)</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Record of health information about patient&apos;s close relatives</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <skos:altLabel>Patient Persona_Gastrointestinal_Diagnosis (Current and Previous)</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gender -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gender">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:isDefinedBy>Salminen, J., Guan, K., Nielsen, L., Jung, S.-G., &amp; Jansen, J. (2020). A Template for Data-Driven Personas: Analyzing 31 Quantitatively Oriented Persona Profiles (pp. 125–144). https://doi.org/10.1007/978-3-030-50020-7_8</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_General_Health_Status -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_General_Health_Status">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Patient goals in relation to the project</rdfs:comment>
+        <rdfs:isDefinedBy>Armfield, J. M., &amp; Heaton, L. J. (2013). Management of fear and anxiety in the dental clinic: A review. Australian Dental Journal, 58(4), 390–407; quiz 531. https://doi.org/10.1111/adj.12118</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <skos:altLabel>Patient Persona HEENT Diagnosis (Current and Previous)</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Hematologic_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Hematologic_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Immunologic_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Immunologic_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Infectious_Disease_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Infectious_Disease_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Leisure_Time_Activity -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Leisure_Time_Activity">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:isDefinedBy>Baskaradoss, J. K., Geevarghese, A., Al-Mthen, A., Al-Ghamdi, H., Al-Haudayris, R., Al-Obaidy, S., &amp; Al-Saadi, W. (2019). Influence of Lifestyle on Dental Health Behavior. Journal of Lifestyle Medicine, 9(2), 119–124. https://doi.org/10.15280/jlm.2019.9.2.119</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Marital_Status -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Marital_Status">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Relationship with significant other</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Musculoskeletal_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Musculoskeletal_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Name -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Name">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:isDefinedBy>Salminen, J., Guan, K., Nielsen, L., Jung, S.-G., &amp; Jansen, J. (2020). A Template for Data-Driven Personas: Analyzing 31 Quantitatively Oriented Persona Profiles (pp. 125–144). https://doi.org/10.1007/978-3-030-50020-7_8</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Patient&apos;s job</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Odontophobia_Level -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Odontophobia_Level">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Odontophobia (condition depicting an irrational and overwhelming fear of dentistry)</rdfs:comment>
+        <rdfs:isDefinedBy>Jones, M., Lee, J. Y., &amp; Rozier, R. G. (2007). Oral health literacy among adult patients seeking dental care. Journal of the American Dental Association (1939), 138(9), 1199–1208; quiz 1266–1267. https://doi.org/10.14219/jada.archive.2007.0344</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Oncologic_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Oncologic_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Oral_Health_Literacy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Oral_Health_Literacy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Level at which the patient is susceptible to understanding information from the provider</rdfs:comment>
+        <rdfs:isDefinedBy>Jones, M., Lee, J. Y., &amp; Rozier, R. G. (2007). Oral health literacy among adult patients seeking dental care. Journal of the American Dental Association (1939), 138(9), 1199–1208; quiz 1266–1267. https://doi.org/10.14219/jada.archive.2007.0344</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Personalities obtained from literature review</rdfs:comment>
+        <rdfs:isDefinedBy>Shi, Jingyu et al. “The Relationship Between Big Five Personality Traits and Psychotic Experience in a Large Non-clinical Youth Sample: The Mediating Role of Emotion Regulation.” Frontiers in psychiatry vol. 9 648. 4 Dec. 2018, doi:10.3389/fpsyt.2018.00648</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Primary_care_Provider -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Primary_care_Provider">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Renal_and_Genitourinary_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Renal_and_Genitourinary_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <skos:altLabel>Patient Persona Respitory Diagnosis (Current and Previous)</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Sleeping_Habit -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Sleeping_Habit">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Social_History -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Social_History">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Activities done during leisure time</rdfs:comment>
+        <rdfs:isDefinedBy>Baskaradoss, J. K., Geevarghese, A., Al-Mthen, A., Al-Ghamdi, H., Al-Haudayris, R., Al-Obaidy, S., &amp; Al-Saadi, W. (2019). Influence of Lifestyle on Dental Health Behavior. Journal of Lifestyle Medicine, 9(2), 119–124. https://doi.org/10.15280/jlm.2019.9.2.119</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Surgical_History -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Surgical_History">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <skos:altLabel>Patient&apos;s_Past_Surgical_History</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Persona -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Persona">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:altLabel>User Persona</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Petit_mal_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Petit_mal_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Physicians_Mutual_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Physicians_Mutual_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Pipe_smoking -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pipe_smoking">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Pneumonia_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pneumonia_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Pregnancy_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pregnancy_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Obstetrica/Gynecological_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Proactive_Patient -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Proactive_Patient">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Proactive_Patient_Persona -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Proactive_Patient_Persona">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:isDefinedBy>Manji, I. (2018, January 29). The 5 Patients Every Dentist Will Treat—Spear Education. https://www.speareducation.com/spear-review/2015/09/the-five-kinds-of-patients-in-every-dental-practice</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Problems_with_local_anesthetic -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Problems_with_local_anesthetic">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Quiet_personality -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Quiet_personality">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Recent_weight_change -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Recent_weight_change">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_General_Health_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Reduce_anxiety_at_dentist -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Reduce_anxiety_at_dentist">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Regeneraative_Patient -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Regeneraative_Patient">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Regenerative_Patient_Persona -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Regenerative_Patient_Persona">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Dental_Patient_Persona"/>
+        <rdfs:isDefinedBy>Manji, I. (2018, January 29). The 5 Patients Every Dentist Will Treat—Spear Education. https://www.speareducation.com/spear-review/2015/09/the-five-kinds-of-patients-in-every-dental-practice</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Renaissance_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Renaissance_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Respiratory_rate_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Respiratory_rate_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Retainers -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Retainers">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Rheumatoid_arthritis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Rheumatoid_arthritis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Immunologic_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Root_canal -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Root_canal">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Root_canal_treatment -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Root_canal_treatment">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Shortness_of_breath_on_minimal_exertion_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Shortness_of_breath_on_minimal_exertion_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Sickle_cell_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Sickle_cell_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Single_status -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Single_status">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Marital_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Skelid_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Skelid_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Skin_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Skin_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Skin_cancer_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Skin_cancer_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dermatologic_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Skin_problems_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Skin_problems_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dermatologic_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Skin_rash -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Skin_rash">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Skin_problems_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Smokeless_tobacco_smoking -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Smokeless_tobacco_smoking">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Social_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Snoring_Habit -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Snoring_Habit">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Sleeping_Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Spirit_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Spirit_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Stomach_or_duodenal_ulcer_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Stomach_or_duodenal_ulcer_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Stroke_less_than_6_months_ago -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Stroke_less_than_6_months_ago">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Stroke_(CVA)_or_transient_ischemic_attack_(TIA)_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Stroke_more_than_6_months_ago -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Stroke_more_than_6_months_ago">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Stroke_(CVA)_or_transient_ischemic_attack_(TIA)_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Sulfa_drugs_Allergy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Sulfa_drugs_Allergy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Medication_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Swelling_of_the_ankles_or_feet_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Swelling_of_the_ankles_or_feet_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Syphilis_disease -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Syphilis_disease">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Sexually_transmitted_disease_(STD)_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Temperature_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Temperature_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Temporomandibular_joint_dysfunction -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Temporomandibular_joint_dysfunction">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Thalassemia_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Thalassemia_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Throat_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Throat_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Thyroid_disorder_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Thyroid_disorder_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Endocrine_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Tiredness -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Tiredness">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Sleeping_Habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Tiredness_After_sleeping -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Tiredness_After_sleeping">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Tiredness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Tiredness_during_waketime -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Tiredness_during_waketime">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Tiredness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Toothache_Complaint -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Toothache_Complaint">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Transfer_from_wheelchair -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Transfer_from_wheelchair">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Tuberculosis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Tuberculosis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Tuesday-Thursday-Saturday -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Tuesday-Thursday-Saturday">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Currently_undergoing_dialysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Type_I_or_Type_II_diabetes -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Type_I_or_Type_II_diabetes">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Diabetes_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Type_of_Surgery -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Type_of_Surgery">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Surgical_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Type_of_skin_cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Type_of_skin_cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Skin_cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Ulcers -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Ulcers">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Skin_problems_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Unhappy_with_smile_or_other_aspect_of_the_way_teeth_look_or_feel -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Unhappy_with_smile_or_other_aspect_of_the_way_teeth_look_or_feel">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#UnitedHealthOne_Dental_Insurance -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#UnitedHealthOne_Dental_Insurance">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Use_of_Primary_language_interpreter -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Use_of_Primary_language_interpreter">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Use_of_additional_neck_or_back_supports -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Use_of_additional_neck_or_back_supports">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Use_of_sign_language_interpreter -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Use_of_sign_language_interpreter">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Use_of_supplemental_O2 -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Use_of_supplemental_O2">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Vision_problem_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Vision_problem_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_bile -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_bile">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_blood -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_blood">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_food -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_food">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Vomiting_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Von_Willebrand_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Von_Willebrand_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Bleeding_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Weight_Information -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Weight_Information">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Wheezing_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Wheezing_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Wine_drinking -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Wine_drinking">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Alcohol_Drinking_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Wisdom_teeth -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Wisdom_teeth">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Zometa_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Zometa_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#recreational_drugs_History -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#recreational_drugs_History">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Social_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Alzheimer&apos;s_disease/Dementia_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Alzheimer&apos;s_disease/Dementia_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Angina/Chest_pain_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Angina/Chest_pain_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Anti-anxiety_protocol_(e.g._nitrous_oxide/O2) -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Anti-anxiety_protocol_(e.g._nitrous_oxide/O2)">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Artificial_joints/_implants_disorder -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Artificial_joints/_implants_disorder">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Musculoskeletal_disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Aspirin/NSAIDs_allergy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Aspirin/NSAIDs_allergy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Medication_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Asthma/Hyperactive_airway_disease_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Asthma/Hyperactive_airway_disease_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Attention_deficit_disorder_/_Attention_deficit_hyperactive_disorder_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Attention_deficit_disorder_/_Attention_deficit_hyperactive_disorder_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Caucasian/White_Race -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Caucasian/White_Race">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cavities/lost_or_broken_fillings_complaint -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cavities/lost_or_broken_fillings_complaint">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Check-up/cleaning -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Check-up/cleaning">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cirrhosis/Liver_disease_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cirrhosis/Liver_disease_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Cold_sores/_Mouth_ulcers_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cold_sores/_Mouth_ulcers_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Crohn&apos;s_disease_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Crohn&apos;s_disease_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Crooked_teeth/need_braces -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Crooked_teeth/need_braces">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Crown_(cap) -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Crown_(cap)">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Crowns/bridgework -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Crowns/bridgework">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_Dx_(year)_and_a_brief_description -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Date_of_Dx_(year)_and_a_brief_description">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Type_I_or_Type_II_diabetes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Deep_vein_thrombosis_(DVT)_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Deep_vein_thrombosis_(DVT)_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Dentures/partial_dentures -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Dentures/partial_dentures">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Dizziness/Light_headedness_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Dizziness/Light_headedness_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact&apos;s_Phone_number -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact&apos;s_Phone_number">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Emergency_Contact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact&apos;s_Relationship -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact&apos;s_Relationship">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Emergency_Contact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact’s_First_name -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact’s_First_name">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Emergency_Contact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact’s_Last_name -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact’s_Last_name">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Emergency_Contact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Epilepsy/Other_seizure_disorder_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Epilepsy/Other_seizure_disorder_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Fatigue/Tire_easily -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Fatigue/Tire_easily">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_General_Health_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Fever/Chills/Night_Sweats -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Fever/Chills/Night_Sweats">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_General_Health_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Frequent_Headaches/_Migraines_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Frequent_Headaches/_Migraines_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Graves&apos;_disease_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Graves&apos;_disease_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Immunologic_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hashimoto&apos;s_thyroiditis_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hashimoto&apos;s_thyroiditis_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Immunologic_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis/Jaundice_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hepatitis/Jaundice_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gastrointestinal_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Idiopathic_Thrombocytopenic_Purpura_(ITP)_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Idiopathic_Thrombocytopenic_Purpura_(ITP)_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Bleeding_disorder_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Improve_diet,_lifestyle_and_oral_health -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Improve_diet,_lifestyle_and_oral_health">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Last_glycated_hemoglobin_(A1c_value) -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Last_glycated_hemoglobin_(A1c_value)">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Type_I_or_Type_II_diabetes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#MILD_level_of_Odontophobia_‘dental_anxiety’ -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#MILD_level_of_Odontophobia_‘dental_anxiety’">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Odontophobia_Level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#MODERATE_level_of_Odontophodia_‘dental_fear’ -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#MODERATE_level_of_Odontophodia_‘dental_fear’">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Odontophobia_Level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Missing_teeth/spaces -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Missing_teeth/spaces">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Mitral_valve_prolapse_(MVP)_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Mitral_valve_prolapse_(MVP)_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Nasal_stuffiness/discharge/frequent_nose_bleeds_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Nasal_stuffiness/discharge/frequent_nose_bleeds_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Open/Curious_personality -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Open/Curious_personality">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Operatory_close_to_waiting_area_(mobility_concerns) -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Operatory_close_to_waiting_area_(mobility_concerns)">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Required_Accomodations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Ovarian/_Uterine_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Ovarian/_Uterine_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Pacemaker/Implanted_defibrillator_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pacemaker/Implanted_defibrillator_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Parkinson&apos;s_Disease_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Parkinson&apos;s_Disease_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Neurological/Psychiatric_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Obstetrica/Gynecological_Diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Obstetrica/Gynecological_Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+        <rdfs:comment>Races obtained form OMB</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.whitehouse.gov/omb/</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_TMD/Facial_Pain_History -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_TMD/Facial_Pain_History">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Persona_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Penicillin/other_antibiotics_Allergy -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Penicillin/other_antibiotics_Allergy">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Medication_Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Pondin/Redux_medication -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pondin/Redux_medication">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Popping,_clicking_or_other_noises_from_jaw -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Popping,_clicking_or_other_noises_from_jaw">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_TMD/Facial_Pain_History"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Prostate/_Testicular_Cancer -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Prostate/_Testicular_Cancer">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Cancer_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Renal_failure/Insufficiency_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Renal_failure/Insufficiency_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Renal_and_Genitourinary_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Rheumatic_fever/Rheumatic_heart_disease_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Rheumatic_fever/Rheumatic_heart_disease_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#SEVERE_level_of_Odontophobia_‘dental_phobia’ -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#SEVERE_level_of_Odontophobia_‘dental_phobia’">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Odontophobia_Level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Sexually_transmitted_disease_(STD)_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Sexually_transmitted_disease_(STD)_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Infectious_Disease_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Shortness_of_breath_on_lying_down_without_pillows_under_the_head/back_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Shortness_of_breath_on_lying_down_without_pillows_under_the_head/back_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Sjogren&apos;s_syndrome_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Sjogren&apos;s_syndrome_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Immunologic_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Sleep_apnea/snoring_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Sleep_apnea/snoring_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Respiratory_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Spine/_Spinal_cord_disorder -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Spine/_Spinal_cord_disorder">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Musculoskeletal_disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Stroke_(CVA)_or_transient_ischemic_attack_(TIA)_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Stroke_(CVA)_or_transient_ischemic_attack_(TIA)_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Cardiovascular_Diagnosis_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Swelling_of_the_neck/glands_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Swelling_of_the_neck/glands_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_HEENT_Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Systemic_lupus_erythematosus_(SLE)_diagnosis -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Systemic_lupus_erythematosus_(SLE)_diagnosis">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Immunologic_diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Tooth_sensitivity_to_hot,_cold,_chewing,_other -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Tooth_sensitivity_to_hot,_cold,_chewing,_other">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#Widow/Widower_status -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Widow/Widower_status">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Marital_Status"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#bisphosphonates,_diet_pills_or_steroids_medications">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Current_Medications_and_Supplements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sbmi.uth.edu/ontologies/odpp.owl#local_anesthetic_(Novacain)_used_for_dental_purposes -->
+
+    <owl:Class rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#local_anesthetic_(Novacain)_used_for_dental_purposes">
+        <rdfs:subClassOf rdf:resource="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Dental_History_Information"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Accountant_Job"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Consultant_Job"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Entrepreneur_Job"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Home_maker_job"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Journalist_Job"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Nurse_Job"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Athletics"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Dancing"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Gymnastics"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Activity_involving_Singing"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Alcohol_Drinking_History"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Smoking_Habit"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Aetna_Dental_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Ameritas_Dental_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Blue_Cross_Dental_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Cigna_Dental_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Delta_Dental_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Humana_Dental_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#MetLife_Dental_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Other_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Physicians_Mutual_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Renaissance_Dental_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Spirit_Dental_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#UnitedHealthOne_Dental_Insurance"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#African_American_Race"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#American_Indian_Race"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Asian_American_Race"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Hispanic_Race"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Pacific_Islander_Race"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Caucasian/White_Race"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Blood_pressure_Information"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Heart_rate_Information"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Height_Information"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Respiratory_rate_Information"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Weight_Information"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Divorced_status"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Married_status"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Single_status"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Widow/Widower_status"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Event-driven_Patient"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Fearful_Patient"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Forgetful_Patient"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Proactive_Patient"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Regeneraative_Patient"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Female_Gender"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Male_Gender"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Other_Gender"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_First_name"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Last_name"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Middle_name"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Baseline_Information"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Category"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Chief_Complaint"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Emergency_Contact"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Family_History"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Gender"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Insurance"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Marital_Status"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Name"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Occupation"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Personality_Type"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Social_History"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Patient_Persona_Race/Ethnicity"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact&apos;s_Phone_number"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact&apos;s_Relationship"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact’s_First_name"/>
+            <rdf:Description rdf:about="http://sbmi.uth.edu/ontologies/odpp.owl#Emergency_contact’s_Last_name"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
