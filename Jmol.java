@@ -1,4 +1,4 @@
-public class jmol extends main {
+public class jmol extends Main {
   
   public static final Applet = function;
     public static final int id = 0;
