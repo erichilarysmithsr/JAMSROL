@@ -20,7 +20,7 @@ import net.bioclipse.chemspider.business.ChemspiderManager;
  * 
  * @author egonw
  */
-public class APITest extends AbstractManagerTest {
+public class APITest extends extends Main {
     
     private static ChemspiderManager manager = new ChemspiderManager();
 
