@@ -10,6 +10,8 @@
  ******************************************************************************/
 package net.bioclipse.chemspider.test;
 
+import com.caosreaxson.Main;
+import com.caosreaxson.Jmol;
 import net.bioclipse.core.tests.AbstractManagerTest;
 import net.bioclipse.managers.business.IBioclipseManager;
 import net.bioclipse.chemspider.business.IChemspiderManager;
