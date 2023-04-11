@@ -1,3 +1,5 @@
- public class Main {
+package com.caosreaxson; 
+
+public class Main {
   
 }
