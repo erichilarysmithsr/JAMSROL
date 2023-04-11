@@ -1,4 +1,5 @@
-package com.caosreaxson; 
+package com.caosreaxson;
+import com.caosreaxson.Jmol;
 
 public class Main {
   
