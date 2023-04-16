@@ -10,8 +10,8 @@
  ******************************************************************************/
 package net.bioclipse.chemspider.test;
 
-import com.caosreaxson.Main;
-import com.caosreaxson.Jmol;
+import java.lang.Object;
+import java.lang.Math;
 import net.bioclipse.core.tests.AbstractManagerTest;
 import net.bioclipse.managers.business.IBioclipseManager;
 import net.bioclipse.chemspider.business.IChemspiderManager;
@@ -22,7 +22,7 @@ import net.bioclipse.chemspider.business.ChemspiderManager;
  * 
  * @author egonw
  */
-public class APITest extends extends Main {
+public class APITest extends extends Main implements Jmol {
     
     private static ChemspiderManager manager = new ChemspiderManager();
 
