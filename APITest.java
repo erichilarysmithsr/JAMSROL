@@ -22,7 +22,7 @@ import net.bioclipse.chemspider.business.ChemspiderManager;
  * 
  * @author egonw
  */
-public class APITest extends extends Main implements Jmol {
+public class APITest extends Main implements Jmol {
     
     private static ChemspiderManager manager = new ChemspiderManager();
 
