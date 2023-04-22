@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.Lang.Math;
 
-public class VaccinePipeline {
+public class VaccinePipeline implements Main {
 
     private List<Vaccine> vaccines = new ArrayList<>();
 
