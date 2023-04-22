@@ -5,6 +5,7 @@ import com.caosreaxson.Jmol;
 import com.caosreaxson.Fasta;
 import com.caosreaxson.CancerLocator;
 import com.caosreaxson.APITest;
+import com.caoreaxson.VaccinePipeline;
 
 
 import com.squareup.okhttp.*;
