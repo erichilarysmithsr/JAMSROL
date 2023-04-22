@@ -62,5 +62,15 @@ class Vaccine {
     public void setStatus(String status) {
         this.status = status;
     }
+// Create a new vaccine
+VaccinePipeline vaccinePipeline = new VaccinePipeline();
+vaccinePipeline.createVaccine("COVID-19 Vaccine", "mRNA", "In Development");
+
+// Store vaccine data
+vaccinePipeline.storeVaccine(1, new Vaccine("COVID-19 Vaccine", "mRNA", "In Development", "Phase 3", "95%"));
+
+// Get vaccine information
+Vaccine vaccine = vaccinePipeline.getVaccine(1);
+System.out.println(vaccine);
 
 }
