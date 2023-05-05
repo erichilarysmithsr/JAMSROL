@@ -1,0 +1,19 @@
+<molecule id="geranyl_pyrophosphate">
+  <atom id="C1" elementType="C" x3="0.000000" y3="0.000000" z3="0.000000"/>
+  <atom id="C2" elementType="C" x3="1.456000" y3="0.000000" z3="0.000000"/>
+  <atom id="C3" elementType="C" x3="2.212000" y3="1.212000" z3="0.000000"/>
+  <atom id="C4" elementType="C" x3="1.456000" y3="2.424000" z3="0.000000"/>
+  <atom id="C5" elementType="C" x3="0.000000" y3="2.424000" z3="0.000000"/>
+  <atom id="C6" elementType="C" x3="-0.756000" y3="1.212000" z3="0.000000"/>
+  <atom id="O1" elementType="O" x3="3.624000" y3="1.212000" z3="0.000000"/>
+  <atom id="P1" elementType="P" x3="2.212000" y3="0.000000" z3="1.756000"/>
+  <atom id="O2" elementType="O" x3="2.212000" y3="0.000000" z3="3.512000"/>
+  <bond id="b1" order="1" atom1="C1" atom2="C2"/>
+  <bond id="b2" order="1" atom1="C2" atom3="C3"/>
+  <bond id="b3" order="1" atom1="C3" atom4="C4"/>
+  <bond id="b4" order="1" atom1="C4" atom5="C5"/>
+  <bond id="b5" order="1" atom1="C5" atom6="C6"/>
+  <bond id="b6" order="1" atom1="C2" atom7="O1"/>
+  <bond id="b7" order="1" atom1="P1" atom2="C3"/>
+  <bond id="b8" order="1" atom1="P1" atom3="O2"/>
+</molecule>
