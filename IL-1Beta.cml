@@ -1,0 +1,21 @@
+<molecule id="IL-1β">
+  <formula>C1647H2536N443O453S4</formula>
+  <name>Interleukin 1 beta</name>
+  <structure>
+    <atom id="1">
+      <element>C</element>
+      <charge>0</charge>
+      <x>0.000000</x>
+      <y>0.000000</y>
+      <z>0.000000</z>
+    </atom>
+    ...
+    <atom id="1647">
+      <element>S</element>
+      <charge>0</charge>
+      <x>0.000000</x>
+      <y>0.000000</y>
+      <z>0.000000</z>
+    </atom>
+  </structure>
+</molecule>
